@@ -31,4 +31,9 @@ Sample app + SDK for entitlement sync via webhooks and RevenueCat API
     1. `https://app.revenuecat.com/projects/{PROJECT ID}/integrations/webhooks`
 
 
-blob:https://whimsical.com/0fec9c04-45a0-4efa-bd84-9c3a930ed4f2![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/93fb8ab0-bb47-41a5-8866-1e1927561219)
+# Architecture
+This diagram illustrates how the flow originates with RevenueCat webhooks, then moves through this sample app
+
+![Architecture Diagram](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/d0826b45-c243-47ee-962b-f54207160068)
+
+
