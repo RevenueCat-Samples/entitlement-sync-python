@@ -1,5 +1,6 @@
 {
   "API_SECRET_KEY_V2": "",
   "API_SECRET_KEY_V1": "",
-  "RC_PROJECT_ID": ""
+  "RC_PROJECT_ID": "",
+  "WEBHOOK_TOKEN": ""
 }
