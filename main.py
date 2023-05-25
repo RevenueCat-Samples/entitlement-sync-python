@@ -19,8 +19,9 @@ from bottle import Bottle, Response, request, run
 
 from db_interface import db_create_ent_table, db_dict_factory, db_insert_entitlement, db_fetch_entitlements, \
     db_update_entitlement
-from sdk import RevenueCatClient
+from api_client import RevenueCatClient
 
+# Define the WSGI web app globally so we can attach the /webhook endpoint
 APP = Bottle()
 
 

@@ -148,6 +148,3 @@ class RevenueCatClient:
         """
         return self.get(f'/subscribers/{quote(subscriber_id)}',
                         api_version=1)
-
-    def get_subscribers(self):
-        return self.get(f'/projects/{self.project_id}/subscribers', api_version=1)
