@@ -29,3 +29,6 @@ Sample app + SDK for entitlement sync via webhooks and RevenueCat API
     1. You should see `Listening on http://localhost:8080` in the console
 7. Try out a test webhook in the dashboard!
     1. `https://app.revenuecat.com/projects/{PROJECT ID}/integrations/webhooks`
+
+
+blob:https://whimsical.com/0fec9c04-45a0-4efa-bd84-9c3a930ed4f2![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/93fb8ab0-bb47-41a5-8866-1e1927561219)
