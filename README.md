@@ -61,4 +61,6 @@ The TLS tunnel is optional, but typically the easiest way (vs port forwarding, e
 <img src="https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/fff42d7b-91c3-4222-80bf-a3b336f33f89" width="500px">
 
 
+## Data Model
+![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/f42debcf-64f9-486c-81b6-2fe8b4628dbd)
 
