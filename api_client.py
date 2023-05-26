@@ -1,5 +1,5 @@
 """
-
+HTTP interface to RevenueCat API
 """
 from urllib.parse import quote
 
@@ -19,7 +19,7 @@ def api_url_for_version(api_version: int) -> str:
 
 
 class RevenueCatClient:
-    """Client to make HTTP requests to RevenueCat's V2 API.
+    """Client to make HTTP requests to RevenueCat's V2 & V1 API.
 
     As of May, 2023, the Customers endpoints are in closed-beta, so we still fallback to the V1
     subscribers endpoint for now.

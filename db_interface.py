@@ -12,7 +12,7 @@ from sqlite3 import Connection
 
 
 def db_create_ent_table(db_conn: Connection):
-    """Create the entitlements table if it doesn't exist"""
+    """Idempotent function to create the entitlements table if it doesn't exist"""
     sql = """
     CREATE TABLE IF NOT EXISTS entitlement(
         user_id TEXT,
@@ -26,7 +26,10 @@ def db_create_ent_table(db_conn: Connection):
 
 
 def db_fetch_entitlements(db_conn: Connection, user_id: str):
-    """Fetch all entitlements for a given user"""
+    """Fetch all entitlements for a given user
+
+    We fetch by user rather than entitlements because we might see new entitlements
+    """
     result = db_conn.execute('SELECT * FROM entitlement WHERE user_id=:user_id', {'user_id': user_id})
     return result.fetchall()
 
@@ -46,7 +49,7 @@ def db_insert_entitlement(db_conn: Connection, row: dict) -> int:
 
 
 def db_update_entitlement(db_conn: Connection, row: dict) -> int:
-    """Update a user's existing entitlement"""
+    """Update a user's existing entitlement. Overwrites the whole row"""
     result = db_conn.execute('UPDATE entitlement WHERE user_id=:user_id AND entitlement=:entitlement'
                              'VALUES (:user_id, :entitlement, :expiration, :last_sync, :source)',
                              row)

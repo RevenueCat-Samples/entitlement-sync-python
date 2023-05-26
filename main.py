@@ -8,7 +8,7 @@ The only third-party dependencies required are:
 - Bottle - lightweight WSGI framework for receiving HTTP webhooks from RevenueCat
 - requests - make HTTP request to RevenueCat API
 - certifi - keeps the TLS certificate bundles up to date
-- pipenv - for installing the above dependencies
+- pipenv (optional) - for installing the above dependencies
 """
 import json
 from datetime import datetime
