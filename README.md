@@ -62,7 +62,8 @@ can (and should) skip this entirely.
 
 
 
-<img src="https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/fff42d7b-91c3-4222-80bf-a3b336f33f89" width="500px">
+<img src="https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/3045ba66-bd3d-4835-841c-76da51e0ee06" width="500px">
+
 
 ## Data Model
 
@@ -74,5 +75,5 @@ Do not rely on a boolean field in the database because it will become stale if y
 Always just check if `expiration > current_time` because RevenueCat will calculate the litany of rules required and
 provide you with an expiration if a subscription changes.
 
-![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/f42debcf-64f9-486c-81b6-2fe8b4628dbd)
+![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/c06a0528-5a79-415a-a40c-0842bc39d792)
 
