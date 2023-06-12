@@ -75,5 +75,12 @@ Do not rely on a boolean field in the database because it will become stale if y
 Always just check if `expiration > current_time` because RevenueCat will calculate the litany of rules required and
 provide you with an expiration if a subscription changes.
 
-![image](https://github.com/RevenueCat-Samples/entitlement-sync-python/assets/2552485/c06a0528-5a79-415a-a40c-0842bc39d792)
+| Column      | Type           | Description                                                                          |
+|-------------|----------------|--------------------------------------------------------------------------------------|
+| user_id     | String         | User ID your app uses to identify the user, or RC-generated Anonymous ID             |
+| entitlement | String         | Entitlement ID granted for this user                                                 |
+| expiration  | Unix timestamp | When the entitlement access expires. Used to determine if the entitlement is active. |
+| last_sync   | Unix timestamp | Last time entitlements were synced from RevenueCat.                                  |
+| source      | String         | Reason for the entitlement sync. Defaults to 'revenuecat'.                           |
+
 
